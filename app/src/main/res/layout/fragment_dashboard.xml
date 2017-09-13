@@ -5,11 +5,23 @@
     tools:context="com.example.paturrachman.oceanwise4u.DashboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Punya SI DHASBOARAD"
+        android:text="13-09-2017"
+        android:layout_gravity="center"
+        android:paddingTop="230dp"
         android:textAlignment="center"
-        android:textSize="20dp"/>
-
+        android:textSize="60dp"
+        android:textColor="#fa2fb3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="HAPPY PROGRAMMER"
+        android:layout_gravity="center"
+        android:paddingTop="250dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
 </FrameLayout>

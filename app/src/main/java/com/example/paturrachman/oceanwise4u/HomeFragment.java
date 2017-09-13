@@ -41,7 +41,8 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         sliderView = (SliderView) rootView.findViewById(R.id.sliderView);
         mLinearLayout = (LinearLayout) rootView.findViewById(R.id.pagesContainer);
-        setupSlider();
+        //setupSlider();
+        setupSliderOfline();
         return rootView;
     }
 
@@ -52,6 +53,20 @@ public class HomeFragment extends Fragment {
         fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-2.jpg"));
         fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
         fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
+
+        mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
+        sliderView.setAdapter(mAdapter);
+        mIndicator = new SliderIndicator(getActivity(), mLinearLayout, sliderView, R.drawable.indicator_circle);
+        mIndicator.setPageCount(fragments.size());
+        mIndicator.show();
+    }
+
+    private void setupSliderOfline() {
+        sliderView.setDurationScroll(1000);
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(FragmentSlider.newInstance("travel1"));
+        fragments.add(FragmentSlider.newInstance("travel2"));
+        fragments.add(FragmentSlider.newInstance("travel3"));
 
         mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
         sliderView.setAdapter(mAdapter);
