@@ -51,7 +51,7 @@ public class SliderView extends ViewPager {
 
     public class OwnScroller extends Scroller {
 
-        private int durationScrollMillis = 1 ;
+        private int durationScrollMillis = 1;
 
         public OwnScroller(Context context, int durationScroll) {
             super(context, new DecelerateInterpolator());
