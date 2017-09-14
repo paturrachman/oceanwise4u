@@ -93,7 +93,8 @@
                             android:layout_centerVertical="true"
                             android:textColor="#495bfd"
                             android:layout_toRightOf="@id/iamgeview"
-                            android:text="Login/Masuk" />
+                            android:text="Login/Masuk"
+                            android:fontFamily="sans-serif"/>
                     </RelativeLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -110,25 +111,28 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="10dp"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:paddingTop="10dp">
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
 
                         <ImageView
                             android:id="@+id/iamgeview1"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-
-                            android:layout_marginRight="20dp"
-                            android:background="#000" />
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_insert_invitation_black_24dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="#fff" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
+                            android:textColor="#495bfd"
+                            android:fontFamily="sans-serif"
                             android:layout_toRightOf="@id/iamgeview1"
-                            android:text="LABELNYA" />
+                            android:text="Riwayat Pesan"/>
                     </RelativeLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -138,7 +142,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -193,6 +199,7 @@
                                 android:text="Rp.127.3500 JAKARTA KESURABAYA"
                                 android:textAlignment="center"
                                 android:textColor="#358f9a"
+                                android:fontFamily="sans-serif"
                                 android:textSize="15dp" />
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
@@ -202,7 +209,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp">
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -238,7 +247,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:fontFamily=""
+                                android:fontFamily="sans-serif"
                                 android:text="Rp.655.000 JAKARTA KE SINGAPORE"
                                 android:textAlignment="center"
                                 android:textColor="#eb2719"
@@ -295,7 +304,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp">
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                >
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -388,7 +399,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:text="Jasa Trevel"
                 android:textColor="#000"
                 android:textSize="20dp" />
@@ -404,7 +415,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp">
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -412,14 +425,13 @@
                 android:layout_marginLeft="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/gambar1">
-
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
@@ -428,19 +440,25 @@
 
                         <ImageView
                             android:id="@+id/iamgeview1.1.2"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_local_airport_black_24dp"
                             android:layout_gravity="center"
                             android:layout_marginBottom="10dp"
-                            android:background="#000" />
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@drawable/bg_gambar" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_gravity="center"
-                            android:text="LABELNYA"
-                            android:textSize="12dp" />
+                            android:text="Pesawat"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -456,8 +474,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
@@ -466,19 +484,25 @@
 
                         <ImageView
                             android:id="@+id/iamgeview1.2.3"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_hotel_black_24dp"
                             android:layout_gravity="center"
                             android:layout_marginBottom="10dp"
-                            android:background="#000" />
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@drawable/bg_gambar" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_gravity="center"
-                            android:text="LABELNYA"
-                            android:textSize="12dp" />
+                            android:text="Hotel"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -494,8 +518,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
@@ -504,19 +528,25 @@
 
                         <ImageView
                             android:id="@+id/iamgeview1.3.4"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_train_black_24dp"
                             android:layout_gravity="center"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
                             android:layout_marginBottom="10dp"
-                            android:background="#000" />
+                            android:background="@drawable/bg_gambar" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_gravity="center"
-                            android:text="LABELNYA"
-                            android:textSize="12dp" />
+                            android:text="Kereta"
+                            android:textColor="#000"
+                            android:textSize="13dp" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -532,8 +562,8 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
@@ -542,19 +572,22 @@
 
                         <ImageView
                             android:id="@+id/iamgeview1.3.5"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center"
                             android:layout_marginBottom="10dp"
-                            android:background="#000" />
+                            android:src="@drawable/ic_directions_car_black_24dp"
+                            android:padding="5dp"
+                            android:background="@drawable/bg_gambar" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_gravity="center"
-                            android:text="LABELNYA"
-                            android:textSize="12dp" />
+                            android:textAlignment="center"
+                            android:text="Transport"
+                            android:textSize="13dp" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
@@ -569,8 +602,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:paddingBottom="10dp"
                         android:paddingLeft="10dp"
@@ -579,23 +612,24 @@
 
                         <ImageView
                             android:id="@+id/iamgeview1.3.6"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_directions_bus_black_24dp"
                             android:layout_marginBottom="10dp"
-                            android:background="#000" />
+                            android:background="@drawable/bg_gambar" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_gravity="center"
-                            android:text="LABELNYA"
-                            android:textSize="12dp" />
+                            android:text="Travel"
+                            android:textSize="13dp" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
-
         </LinearLayout>
 
             </RelativeLayout>
