@@ -1,6 +1,7 @@
 package com.example.paturrachman.oceanwise4u;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 
 import com.example.paturrachman.oceanwise4u._sliders.SliderIndicator;
@@ -28,6 +31,7 @@ public class HomeFragment extends Fragment {
 
     private SliderView sliderView;
     private LinearLayout mLinearLayout;
+    private RelativeLayout masuk;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -41,6 +45,18 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         sliderView = (SliderView) rootView.findViewById(R.id.sliderView);
         mLinearLayout = (LinearLayout) rootView.findViewById(R.id.pagesContainer);
+
+        //MASUK KE DALAM FORM LOGIN(activity_masuk.xml)
+        masuk = (RelativeLayout) rootView.findViewById(R.id.masuk);
+        masuk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(),"pencet saya", Toast.LENGTH_SHORT).show();
+                Intent masuk = new Intent (getActivity(), MasukActivity.class);
+                startActivity(masuk);
+            }
+        });
+
         //setupSlider();
         setupSliderOfline();
         return rootView;
